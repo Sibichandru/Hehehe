@@ -1,0 +1,40 @@
+<style>* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: #fed5c8;
+}
+
+.list {
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.list li {
+  list-style-type: none;
+  
+  width: 200px;
+  height: 200px;
+  opacity: .25;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  border-radius: 2px;
+  background: #9C89B8;
+<ul class="list">
+  <li class="hide"></li>
+  <li class="prev"></li>
+  <li class="act"></li>
+  <li class="next"></li>
+  <li class="next new-next"></li>
+</ul>
+
+<div class="swipe"></div>
+
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
