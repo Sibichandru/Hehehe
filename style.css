@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: #fed5c8;
+}
+.image-container {
+  /* change gap and width if to whatever u want */
+  /* width: 600px; */
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-prev,
+.image-next {
+  /* width of left and right image */
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-color: aliceblue;
+}
+
+.image-main {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  background-color: aquamarine;
+  /* add any transform function u like i jst added minimal transform, so tired of css */
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
